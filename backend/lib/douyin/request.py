@@ -12,7 +12,7 @@ import random
 import threading
 from urllib.parse import quote
 
-import exejs
+import execjs
 import niquests as requests
 from loguru import logger
 
