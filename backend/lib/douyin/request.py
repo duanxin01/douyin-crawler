@@ -29,7 +29,7 @@ from .types import (
 )
 
 # 指定JS运行时为Node.js
-# exejs.reset_runtime("Node")
+# execjs.reset_runtime("Node")
 
 
 def _load_sign_script():
@@ -37,7 +37,7 @@ def _load_sign_script():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     js_file = os.path.join(current_dir, "js", "douyin.js")
     with open(js_file, "r", encoding="utf-8") as f:
-        return exejs.compile(f.read())
+        return execjs.compile(f.read())
 
 
 class Request(object):
